@@ -68,7 +68,7 @@ header {
 }
 
 p{
-	color: gray;
+	color: black;
 	margin-top: 20px;
 	font-size: 1.2em;
 }
@@ -81,7 +81,7 @@ h1 {
 }
 	
 .background {
-	background-color: lightblue;
+	background-color: white;
 }
 /* IMG */
 
