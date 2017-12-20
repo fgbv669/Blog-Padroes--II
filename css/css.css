@@ -10,8 +10,8 @@
 /* BODY */
 
 body {
-  background-color: white; 
-
+background-color: white; 
+margin: 0; 
   }
 
 /* HEADER */
@@ -85,24 +85,27 @@ h1 {
 }
 /* IMG */
 
-section { 
+#galeria{ 
 		flex-flow: row wrap; 
 		display: flex;
 		margin: auto	
 	} 
-section span { 
-		flex: auto; 
-		width: 200px; 
-		
-	}
-section span img { 
-		width: auto; 
-		height: auto; 
-		margin: 60px 0 0 85px;
-		max-width: 300px;
-		max-height: 300px
-	}
 	
+#galeria div { 
+	flex: auto; 
+	width: 200px; 
+	margin: .5vw; 
+}
+#galeria div img { 
+	width: 100%; 
+	height: auto;
+	max-width: 300px;
+	max-height: 300px;	
+}
+	@media screen and (max-width: 400px) {            /*tirar a margem quando o tamanho da tela diminui muito*/
+	header div { margin: 0; }
+	header { padding: 0; }
+}
 	
 footer {
     width: 100%;
@@ -111,13 +114,19 @@ footer {
     text-align: center;
 	left: 0;
 	bottom: 0;
-	height: 3vw;
-	margin: 50px 0 0 0;
+	height: 2.5vw;
+	margin: 25px 0 0 0;
 	font-size: 0.9em;
 }
 
-.index {
+footer p{ color:grey;
+}
+
+.fixed{
 	position: fixed;
+}
+.index {
+	position: relative;
 
 }
 @media (min-width: 550px) {
